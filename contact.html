@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Zoo Arcadia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contactez-nous</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="contact_process.php" method="post">
+            <label for="title">Titre :</label>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="description">Description :</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+            <label for="email">Votre email :</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" value="Envoyer">
+        </form>
+    </main>
+</body>
+</html>

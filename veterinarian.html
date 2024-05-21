@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Espace Vétérinaire - Zoo Arcadia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Espace Vétérinaire</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="animal-reports">
+            <h2>Comptes rendus par animal</h2>
+            <form action="add_report.php" method="post">
+                <label for="animal">Animal :</label>
+                <select id="animal" name="animal" required>
+                    
+                </select><br><br>
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required><br><br>
+                <label for="etat">État de l'animal :</label>
+                <textarea id="etat" name="etat" required></textarea><br><br>
+                <label for="nourriture">Nourriture proposée :</label>
+                <input type="text" id="nourriture" name="nourriture" required><br><br>
+                <label for="grammage">Grammage de la nourriture (g) :</label>
+                <input type="number" id="grammage" name="grammage" required><br><br>
+                <label for="details">Détail de l'état (facultatif) :</label>
+                <textarea id="details" name="details"></textarea><br><br>
+                <input type="submit" value="Ajouter un compte rendu">
+            </form>
+        </section>
+        <section id="habitat-comments">
+            <h2>Commentaires sur les habitats</h2>
+            <form action="add_habitat_comment.php" method="post">
+                <label for="habitat">Habitat :</label>
+                <select id="habitat" name="habitat" required>
+                    
+                </select><br><br>
+                <label for="comment">Commentaire :</label>
+                <textarea id="comment" name="comment" required></textarea><br><br>
+                <input type="submit" value="Ajouter un commentaire">
+            </form>
+        </section>
+        <section id="animal-feed">
+            <h2>Consommation de nourriture des animaux</h2>
+            
+        </section>
+    </main>
+</body>
+</html>
